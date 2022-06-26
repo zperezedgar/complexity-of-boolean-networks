@@ -1,2 +1,2 @@
-# complexity-of-boolean-networks
-On the Complexity of Boolean Networks
+# On the Complexity of Boolean Networks
+Welcome to my thesis to get my Masters degree in physics!
