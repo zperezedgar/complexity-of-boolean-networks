@@ -1,0 +1,253 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Review of Graph Theory}{3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}What is a Graph?}{3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}The Vertex Degree}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Some Basic Definitions}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}The Handshaking Lemma}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Adjacency and Incidence Matrices}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}The Adjacency Matrix}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}The Incidence Matrix}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Isomorphic Graphs}{9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Paths and Cycles}{10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Some Families of Graphs}{10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}Null Graphs}{12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}Complete Graphs}{12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.3}Cycle Graphs}{13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.4}Path Graphs}{13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.5}Bipartite Graphs}{13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.6}Cube Graphs}{14}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.7}Trees}{14}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.8}Circulant Graphs}{15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Counting Graphs}{15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.1}Labeled Graphs}{16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.2}Unlabeled Graphs}{16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7.3}Counting Adjacency Matrices}{16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Directed Graphs}{17}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.1}The Underlying Graph}{18}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.2}Subdigraphs}{18}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.3}Local Degrees in a Digraph}{18}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.4}Adjacency and Incidence Matrices for a Digraph}{19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.5}Isomorphic Digraphs}{19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8.6}Counting Digraphs}{20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Random Graphs}{20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}The Watts-Strogatz Small-World Graph Distribution}{21}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2}The Barab\IeC {\'a}si-Albert Graph Distribution}{22}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.3}The Uniform Graph Distribution}{23}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.10}Other Ways of Representing Graphs}{23}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Boolean Networks}{25}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Boolean Networks and The Random Boolean Network Model}{25}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Boolean Networks}{25}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Random Boolean Networks}{26}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Topology}{26}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}Updating Functions}{28}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.4.1}Boolean Functions}{28}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.4.2}Choosing the Updating Functions}{30}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.5}Counting RBNs}{31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.6}Dynamics: The State Space and Some Basic Definitions}{32}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}The Dynamical Phases}{35}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Other Updating Schemes}{37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Asynchronous RBNs}{37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Generalized Asynchronous RBNs}{37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Deterministic Asynchronous RBNs}{38}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Deterministic Generalized Asynchronous RBNs}{38}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Mixed-context RBNs}{38}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Applications of The RBNs}{38}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Software to Study RBNs}{40}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Algorithmic Complexity}{41}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}The Kolmogorov Complexity}{41}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}The Turing Machine}{43}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}The Universal Turing Machine}{45}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}The Halting Problem}{47}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}The Formal Definition of K-Complexity}{48}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Lossless Compression and Entropy as Approximations to K-Complexity}{49}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}The Lossless Compression}{50}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}The Shannon Entropy}{51}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Towards a Better Measurement of K-Complexity}{56}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}The Invariance Theorem}{56}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}The Algorithmic Probability and The Coding Theorem}{57}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}A Library to Measure The K-Complexity}{59}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Methodology}{59}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1.1}The Coding Theorem Method (CTM)}{59}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1.2}The Block Decomposition Method (BDM)}{60}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1.3}Generalizations to More Dimensions and Symbols}{61}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Some Applications of Kolmogorov Complexity}{61}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}The Complexity of Random Boolean Networks}{63}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Software and Hardware Features}{64}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}The Complexity of Random Sequences of Bits}{64}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}The Complexity of Random Graphs}{66}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Complexity from The Watts-Strogatz Graph Distribution}{66}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Complexity from The Barab\IeC {\'a}si-Albert Graph Distribution}{68}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}The Complexity of Random Digraphs}{70}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}The Complexity from Increasing the Vertex In-Degree}{70}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}The Complexity from The Uniform Digraph Distribution}{72}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}The Complexity of Isomorphic Networks}{73}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.1}The Complexity of Isomorphic Graphs}{73}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.2}The Complexity of Isomorphic Digraphs}{76}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.3}The Complexity from The Uniform Digraph Distribution Revisited by Considering Isomorphisms}{78}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}The Complexity of a Set Boolean Functions}{80}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.1}The Complexity from Sets of Random Boolean Functions with Increasing Number of Inputs}{81}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.2}The Complexity from Sets of Random Boolean Functions with Fixed Number of Inputs}{83}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}The Complexity of Boolean Networks}{86}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.1}A Lossless Representation for Boolean Networks}{86}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.2}The Correlation Between the Complexity of Random Boolean Networks and The Complexity of Its Topology}{88}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.3}The Width of the Distribution of Complexities for Random Boolean Networks}{91}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.4}The Correlation Between the Complexity of Random Boolean Networks and the Complexity of its Set of Updating Functions}{94}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.8}Conclusions}{97}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}A Low-cost and Faster Implementation of Kolmogorov Complexity for Binary Sequences}{101}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Theoretical Framework}{102}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Machine Learning}{102}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Neural Networks}{104}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.1}The Perceptron}{104}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.2}The Gradient Descent Method}{105}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.3}The Stochastic Gradient Descent Method}{109}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.4}Feed-Forward Neural Networks}{109}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.5}Feed-forward Neural Networks as Approximators}{111}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.6}Network Training}{112}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.7}Designing the Network}{113}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.8}Choosing the Error Function}{115}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.9}Choosing the Optimization Method}{117}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.2.10}Regularization Techniques}{117}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Machine Learning Frameworks}{120}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Methodology}{120}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Software and Hardware Features}{122}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}The Training and Target Sets}{122}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Design of The Neural Networks}{123}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.4}The Learning Settings}{124}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.5}The Block Decomposition Method with Neural Networks}{125}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Results}{126}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}The Complexity of Random Sequences of Bits}{126}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}The Error and Computational Time of the BDMNN}{127}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}The BDMNN Versus a Parallel Implementation of the BDM}{128}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Conclusions}{129}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}General Conclusions}{135}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Algorithms}{137}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Wolfram Language Algorithms}{137}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Python Algorithms}{148}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{151}% 

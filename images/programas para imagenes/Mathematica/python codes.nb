@@ -1,0 +1,221 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7943,        213]
+NotebookOptionsPosition[      7254,        196]
+NotebookOutlinePosition[      7600,        211]
+CellTagsIndexPosition[      7557,        208]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+import keras
+import numpy as np
+from bdm import BDM
+import random
+from keras.preprocessing.sequence import pad_sequences
+
+# Initialize BDM object
+# ndim argument specifies dimensionality of BDM
+bdm = BDM (ndim = 1)
+
+length_max = 100
+length_min = 21
+num = 30000 #number of sequences to generate
+X = [] #Training vector
+Y = np.zeros ((num + 1, 1)) #Target Vector
+
+
+for i in range (num + 1) : 
+\tlength = random.randint (length_min, length_max) #length of the sequence
+\tones_prob = random.randint(0, 100)/100 #probability parameter
+\tif ones_prob > 0.95 : #increase the probability of a sequence full of 1s
+\t\tsec = np.random.choice (2, length, p = [0, 1]).reshape (1, length) \
+#random sequence
+\t\tX.append (sec[0].tolist ())
+\t\tY[i] = bdm.bdm (sec[0])
+\telse : 
+\t\tprob = random.randint (0, 100)/100 #probability parameter
+\t\tsec = np.random.choice (2, length, p = [1 - prob, prob]).reshape (1, \
+length) 
+\t\tX.append (sec[0].tolist ())
+\t\tY[i] = bdm.bdm (sec[0])
+
+X = pad_sequences (X, value = -1) #padding procedure\
+\>", "Program",
+ CellChangeTimes->{{3.7733752461704*^9, 3.7733752621756697`*^9}, 
+   3.7733754835852175`*^9, {3.7733755166823845`*^9, 3.77337562558401*^9}, {
+   3.7733756761049995`*^9, 3.7733757356279964`*^9}, {3.7733757987500606`*^9, 
+   3.773375871778057*^9}, {3.7733759164542503`*^9, 3.7733760448855*^9}, {
+   3.773376231670929*^9, 3.773376242751794*^9}, {3.7733763671800413`*^9, 
+   3.7733763881950293`*^9}},ExpressionUUID->"27480b97-31ed-46b8-ad2d-\
+b4406ef1f919"],
+
+Cell["\<\
+from keras import Sequential
+from keras.layers import Dense
+from keras.layers import ELU
+
+def build_regressor () : 
+\tregressor = Sequential ()
+\tregressor.add (Dense (units = length_max, input_shape = (length_max,))) 
+\tregressor.add (ELU (alpha = 1))
+\tregressor.add (Dense (units = int (round (2*(length_max)/3))))
+\tregressor.add (ELU (alpha = 1))
+\tregressor.add (Dense (units = 1, activation = ' linear')) 
+\tregressor.compile (optimizer = ' Nadam', loss = ' mean_squared _error', \
+metrics = [' \t\tmean_squared _error', ' mean_absolute _error', \
+\"mean_absolute_percentage_error\"])
+\treturn regressor
+
+build_regressor ().summary ()\
+\>", "Program",
+ CellChangeTimes->{{3.77342193580266*^9, 3.7734219358056593`*^9}, {
+  3.773421982992877*^9, 3.773422003464885*^9}, {3.7734220676150703`*^9, 
+  3.7734221421730633`*^9}, {3.7734221774050674`*^9, 3.773422195749081*^9}, {
+  3.7734224520784073`*^9, 
+  3.773422516499422*^9}},ExpressionUUID->"ea7b86b7-dc40-48ff-b586-\
+7986198cca09"],
+
+Cell["\<\
+import keras
+from keras.preprocessing.sequence import pad_sequences
+import math
+import collections
+import numpy as np
+
+length_max = 1001 #max length of NN 1
+length_max _ 2 = 100 #max length of NN 2
+length_max _ 3 = 20 #max length of NN 3
+splitted_length=500 #length of the splitted sequences
+
+def kolmo (seq, counter = 1, complexity = 0) : 
+\tif (len (seq[0]) < length_max) : 
+\t\tif (len (seq[0]) > length_max _ 2) : 
+\t\t\tsequence = pad_sequences (seq, value = -1, maxlen = length_max)
+\t\t\tcomplexity = NN_ 1000. predict (sequence) + math.log (counter, 2) #BDMNN
+\t\telif (len (seq[0]) <= length_max _ 2 and len (seq[0]) > length_max _ 3) : 
+\t\t\tsequence = pad_sequences (seq, value = -1, maxlen = length_max _ 2)
+\t\t\tcomplexity = NN_ 100. predict (sequence) + math.log (counter, 2)
+\t\telif (len (seq[0]) <= length_max _ 3 and len (seq[0]) > 11) : 
+\t\t\tsequence = pad_sequences (seq, value = -1, maxlen = length_max _ 3)
+\t\t\tcomplexity = NN_ 20. predict (sequence)[0] + math.log (counter, 2)
+\t\telse : 
+\t\t\tcomplexity = 2.285794 #complexity of sequences 0 and 1
+\telif (len (seq[0]) >= length_max) : 
+\t\tsplitted = np.array_split (seq[0], math.ceil (len \
+(seq[0])/(splitted_length)))
+\t\tsplitted_tuple = map (tuple, splitted)
+\t\tcounts = collections.Counter (splitted_tuple) #count repeated sequences
+\t\tcomplexity_list = list (map (kolmo, [splitted], counts.values ()))
+\t\tcomplexity = sum (complexity_list[0])
+\telse : 
+\t\tcomplexity = 2.285794 #complexity of sequences 0 and 1
+\treturn complexity\
+\>", "Program",
+ CellChangeTimes->{{3.773439310096697*^9, 3.7734394008096952`*^9}, {
+  3.773439456979702*^9, 3.773439814132284*^9}, {3.7734398444123015`*^9, 
+  3.7734398482142982`*^9}, {3.7734398933482866`*^9, 3.7734399508013*^9}, {
+  3.7734402177683*^9, 
+  3.77344025594932*^9}},ExpressionUUID->"f70d31f7-cbdf-40a4-885e-\
+fe357157721c"],
+
+Cell["\<\
+import time
+
+long_max = 10000 #number of sequences to consider
+time_lib = np.zeros ((long_max - 11)) #time for BDM
+time_mi _lib = np.zeros ((long_max - 11)) #time for BDMNN
+lib = np.zeros ((long_max - 11)) #complexity by BDM
+mi_lib = np.zeros ((long_max - 11)) #complexity by BDMNN
+longs = np.zeros ((long_max - 11))
+
+for i in range (12, long_max + 1) : 
+ \tprueba = np.random.choice (2, i).reshape (1, i)
+\tstart = time.process_time () #start timimng for BDMNN
+\tmi_lib[i - 12] = kolmo (prueba)
+\ttime_mi _lib[i - 12] = time.process_time () - start
+\tstart = time.process_time () #start timimng for BDM
+\tlib[i - 12] = bdm.bdm (prueba[0])
+\ttime_lib[i - 12] = time.process_time () - start
+\tlongs[i - 12] = i\
+\>", "Program",
+ CellChangeTimes->{{3.773502682869805*^9, 3.7735027001897984`*^9}, {
+  3.7735027358908205`*^9, 3.7735027732057953`*^9}, {3.77350281483082*^9, 
+  3.7735029608767986`*^9}},ExpressionUUID->"b5c11a2f-89b3-469a-92f8-\
+13c13e64e146"],
+
+Cell["\<\
+import time
+import numpy as np
+from joblib import Parallel, delayed
+from bdm import BDM
+from bdm.utils import slice_dataset
+
+bdm = BDM (ndim = 1)
+
+kernels = 4 #numer of kernels
+long_max = 5000 #number of sequences to consider
+time_lib = np.zeros ((long_max - 11)) #time for BDM
+time_mi _lib = np.zeros ((long_max - 11)) #time for BDMNN
+lib = np.zeros ((long_max - 11)) #complexity by BDM
+mi_lib = np.zeros ((long_max - 11)) #complexity by BDMNN
+longs = np.zeros ((long_max - 11))
+
+for i in range (12, long_max + 1) : 
+\tprueba = np.random.choice (2, kernels*i).reshape (1, kernels*i)
+\tstart = time.process_time ()
+\tmi_lib[i - 12] = kolmo (prueba)
+\ttime_mi _lib[i - 12] = time.process_time () - start
+
+\tif len (prueba[0]) >= 48 :
+\t\tcounters_demo = Parallel (n_jobs = 4) (delayed (bdm.count_and _lookup) \
+(d) for d in \t\tslice_dataset (prueba[0], (round (len \
+(prueba[0])/kernels),))) 
+\t\tstart = time.process_time ()
+\t\tlib[i - 12] = bdm.compute_bdm(*counters_demo) \
+time_lib[i-12]=time.process_time()-\t\t\tstart 
+ \telse:
+\t\tstart=time.process_time() lib[i-12]=bdm.bdm(prueba[0]) \t\t\t\t   \t\t\t\t\
+      
+\t\ttime_lib[i-12]=time.process_time()-start longs[i-12]=kernels*i\
+\>", "Program",
+ CellChangeTimes->{{3.7735073332614913`*^9, 
+  3.773507546388071*^9}},ExpressionUUID->"5ac94757-8c27-4bd2-a594-\
+7bd636fc5e8d"]
+},
+WindowSize->{759, 677},
+WindowMargins->{{-1251, Automatic}, {Automatic, 74}},
+FrontEndVersion->"12.0 para Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1505, 41, 498, "Program",ExpressionUUID->"27480b97-31ed-46b8-ad2d-b4406ef1f919"],
+Cell[2066, 63, 996, 24, 273, "Program",ExpressionUUID->"ea7b86b7-dc40-48ff-b586-7986198cca09"],
+Cell[3065, 89, 1872, 41, 528, "Program",ExpressionUUID->"f70d31f7-cbdf-40a4-885e-fe357157721c"],
+Cell[4940, 132, 964, 23, 303, "Program",ExpressionUUID->"b5c11a2f-89b3-469a-92f8-13c13e64e146"],
+Cell[5907, 157, 1343, 37, 498, "Program",ExpressionUUID->"5ac94757-8c27-4bd2-a594-7bd636fc5e8d"]
+}
+]
+*)
+

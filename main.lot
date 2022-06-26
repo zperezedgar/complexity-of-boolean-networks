@@ -1,0 +1,45 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Number of unlabeled graphs for $n \leq 8 $.\relax }}{17}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Truth table with all the possible Boolean functions for $k=2$.\relax }}{28}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Truth table for the NOT function.\relax }}{29}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Truth table for the AND function.\relax }}{29}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.4}{\ignorespaces Truth table for the OR function.\relax }}{29}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.5}{\ignorespaces Truth table for the NAND function.\relax }}{30}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.6}{\ignorespaces Truth table for the NOR function.\relax }}{30}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.7}{\ignorespaces Truth table for the XOR function.\relax }}{31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.8}{\ignorespaces Truth table for the XNOR function.\relax }}{31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.9}{\ignorespaces Truth table with all the possible Boolean functions for $k=2$ rewritten by using symbols.\relax }}{32}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.10}{\ignorespaces Truth table with the functions assigned to a Boolean Network of $4$ nodes and parameter $k=2$.}}{34}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces The transition table of a parity counter for a Turing machine. $s_{j}$ is the initial state of the machine ($0$ or $1$), $s'_{j,k}$ is the final state of the machine ($0$, $1$ or halt), $i_{j}$ is the initial symbol in the cell of the tape read by the machine ($0$, $1$ or blank), $i'_{j,k}$ is the symbol printed by the head on the cell of the tape ($0$ or $1$) and $d_{j,k}$ is the direction to which the head and the machine will be moved ($1$ means to the right, $0$ means to the left and "$-$" means there is no movement).\relax }}{45}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Truth table with the set of Boolean functions assigned to a Boolean Network of $4$ nodes and parameter $k=2$ used to write the matrix representation of the set of updating functions.\relax }}{81}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5.2}{\ignorespaces The mapping produced by a Boolean Network.}}{87}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

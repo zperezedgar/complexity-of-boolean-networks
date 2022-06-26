@@ -1,0 +1,142 @@
+% !TeX document-id = {d2fd77c6-5642-46f4-862d-2e899e6cf612}
+
+% !BIB TS-program = biber
+\documentclass[12pt,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage[labelfont=bf]{caption}
+\usepackage[labelfont=bf]{subcaption}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\setcounter{secnumdepth}{3}
+%\fancyhead{}
+%\fancyhead[RO,LE]{Thesis Title}
+%\fancyfoot{}
+%\fancyfoot[LE,RO]{\thepage}
+%\fancyfoot[LO,CE]{Chapter \thechapter}
+%\fancyfoot[CO,RE]{Author Name}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+\usepackage{scrlayer}
+\DeclareNewLayer[
+    foreground,
+    %textarea,% use only the textarea
+    contents={%
+      \parbox[b][\layerheight][c]{\layerwidth}
+        {\centering This page intentionally left blank.}%
+    }
+  ]{blankpage.fg}
+\DeclarePageStyleByLayers{blank}{blankpage.fg}
+
+
+
+\usepackage{afterpage}
+
+%\usepackage[style=alphabetic]{biblatex}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{references.bib}
+\DeclareNameAlias{sortname}{family-given}
+\DeclareNameAlias{default}{family-given}
+
+\title{Thesis Title}
+\author{Author name}
+\date{Day Month Year}
+
+\pagenumbering{roman} %empezamos con num romana
+\begin{document}
+
+\input{titlepage}
+
+\clearpage
+\thispagestyle{empty}
+\phantom{a}
+\vfill
+\newpage
+\vfill
+%\addtocounter{page}{-1}
+
+\input{abstract}
+
+\clearpage
+\thispagestyle{empty}
+\phantom{a}
+\vfill
+\newpage
+\vfill
+
+\chapter*{Dedication}
+{\LARGE
+I dedicate this thesis to all my teachers.}
+
+%\chapter*{Declaration}
+%I declare that...
+
+\chapter*{Acknowledgments}
+I want to thank to the Universidad Autónoma de San Luis Potosí, especially to the staff of its Physics Institute for their support and facilities to write this thesis. The knowledge that I acquired from my teachers in the graduate program was priceless and its dedication has paid off with this work. Finally, I also would like to thank the Consejo Nacional de Ciencia y Tecnología (CONACYT) for their financial support throughout my studies to get the master's degree.
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\newpage\null\thispagestyle{blank}\newpage
+
+\chapter{Introduction}
+\input{chapters/introduction}
+
+\chapter{Review of Graph Theory}
+\input{chapters/chapter02}
+
+\chapter{Boolean Networks}
+\input{chapters/chapter03}
+
+\chapter{Algorithmic Complexity}
+\input{chapters/chapter04}
+
+%\newpage\null\thispagestyle{blank}\newpage
+
+\chapter{The Complexity of Random Boolean Networks}
+\input{chapters/chapter05}
+
+\newpage\null\thispagestyle{blank}\newpage
+
+\chapter{A Low-cost and Faster Implementation of Kolmogorov Complexity for Binary Sequences}
+\input{chapters/chapter06}
+
+%\newpage\null\thispagestyle{blank}\newpage
+
+\chapter{General Conclusions}
+\input{chapters/conclusion}
+
+\appendix
+\chapter{Algorithms}
+\input{chapters/appendix}
+
+\cleardoublepage
+%\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title={References}]
+
+\clearpage
+\thispagestyle{empty}
+\phantom{a}
+\vfill
+\newpage
+\vfill
+
+\end{document}
